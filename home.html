@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+                <a href="#"><i class="fa-solid fa-globe"></i>TRAVELRY</a>
+        </div>
+        <nav class="nav-bar">
+            <a  href="home.html" class="active">HOME</a>
+             <a href="about.html">ABOUT US</a>
+             <a href="des.html">DESTINATION</a>
+             <a href="review.html">REVIEWS</a>
+               <a href="contact.html">CONTACT</a>
+     </nav>
+     <div class="action_btn" id="form_open">
+        <a href="#" >Get Started</a>
+</div>
+     <div class="icon">
+        <i class ="fas fa-bars" id="menu-bar"></i>
+      </div>
+     
+    
+        
+          <form action="" class="login_form">
+            <i class="fa-solid fa-circle-xmark" id="close"></i>
+            <h2>login</h2>
+            <div class="input_box">
+              <input type="email" placeholder="enter your email">
+              <i class="fa-sharp fa-regular fa-envelope email" ></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="enter your password">
+              <i class="fa-sharp fa-solid fa-lock password"></i>
+              <i class="fa-regular fa-eye-slash pw-hide"></i>
+            </div>
+            <div class="option_field">
+              <span class="checkbox">
+                <input type="checkbox" id="check">
+    <label for="check">Remember me </label>
+                </span>
+                <a href="#" class="forget_pw">Forget password?</a>
+            </div>
+            <button class="button"> Login now</button>
+            <div class="login_singup">
+              Don't have account? <a href="#" id="signup">Sign Up</a>
+            </div>
+          </form>
+    
+        <!--sign up -->
+        <div class="signup_form">
+          <form action="#">
+            <h2>sign up </h2>
+            <div class="input_box">
+              <input type="email" placeholder="enter your email">
+              <i class="fa-sharp fa-regular fa-envelope email" ></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="Create password">
+              <i class="fa-sharp fa-solid fa-lock password"></i>
+              <i class="fa-regular fa-eye-slash pw-hide"></i>
+            </div>
+            <div class="input_box">
+              <input type="password" placeholder="confirm password">
+              <i class="fa-sharp fa-solid fa-lock password"></i>
+              <i class="fa-regular fa-eye-slash pw-hide"></i>
+            </div>
+            <button class="button"> Sign up Now</button>
+            <div class="login_singup">
+              already have account? <a href="#" id="login">Sign Up</a>
+            </div>
+          </form>
+        </div>
+      </div>
+
+
+    </header>
+
+    <section class="home" id="home">
+
+           
+  
+      <video class="video_bg" autoplay muted loop>
+        <source src="images/v1.mp4" type="video/mp4">
+      </video>
+      <div class="home-text">
+        <h1>explore the world</h1>
+        <p>Traveling to any place requires a lot of planning and packing. It becomes easier with the help of travel agencies. Many families think about a vacation but never end up going. This is when travel agencies come as a fortuneTraveling is the medicine for a lot of diseases.Traveling is that essence of life that every person desperately wants but only a few can actually experience with a proper plan.</p>
+ <a href="#">MORE</a>
+      </div>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+        <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+       
+      
+  </div>
+</section> 
+ <!--booking-->
+ <div class="book_form" id="book_form">
+  <form action="">
+    <div class="input_box">
+      <span>where to go?</span>
+      <input type="text" placeholder="place name" value="">
+    </div>
+    <div class="input_box">
+      <span>when?</span>
+      <input type="datetime-local">
+    </div>
+    <div class="input_box">
+      <span>how many?</span>
+      <input type="number" placeholder="number of travelers" value="">
+    </div>
+    <button class="button"> Book Now</button>
+  </form>
+
+</div>
+
+ 
+    <section class="about" id="about">
+      <h1 class="heading"> why choose us?</h1>
+      <div class="container"></div>
+      <div class="row">
+         
+          <div class="content">
+              <h3><i class="fa-solid fa-paper-plane"></i>Make your trip unforgettable!</h3>
+              <p>
+
+                “Travel is the main thing you purchase that makes you more extravagant”. We, at ‘Travelry’, swear by this and put stock in satisfying travel dreams that make you perpetually rich constantly.
+                
+                We have been moving excellent encounters for a considerable length of time through our cutting-edge planned occasion bundles and other fundamental travel administrations. We rouse our clients to carry on with a rich life, brimming with extraordinary travel encounters.</p>
+                <a href="#">READ MORE</a>
+      </div>
+    </div>
+   
+  </div>
+</div>
+        </section> 
+        <!--destination-->
+        <section class="destination" id="destination">
+          <h1 class="heading">Most Visited Places</h1>
+ <div class="wrapper">
+  <i id="left"class="fa-solid fa-angle-left "></i>
+  <ul class="carousel">
+    <li class="card">
+      <div class="card_img"> <img src="images/Greece.jpg" alt="" draggable="false"></div>
+      <h1 class="name">Greece</h1>
+      <p class="discription">Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. </p>
+      <button class="button">view more</button>
+ </li>
+ <li class="card">
+  <div class="card_img"> <img src="images/london.jpg" alt="" draggable="false"></div>
+  <h1 class="name">london</h1>
+  <p class="discription">London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times. At its centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’ clock tower </p>
+  <button class="button">view more</button>
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/spain.jpg" alt="" draggable="false"></div>
+  <h1 class="name">spain</h1>
+  <p class="discription">Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum </p>
+  <button class="button">view more</button>
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/turkey.jpg" alt="" draggable="false"></div>
+  <h1 class="name">turkey</h1>
+  <p class="discription">Turkey, officially the Republic of Türkiye, is a transcontinental country located mainly on the Anatolian Peninsula in West Asia, with a small portion on the Balkan Peninsula in Southeast Europe.</p>
+  <button class="button">view more</button>
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/paris.jpg" alt="" draggable="false"></div>
+  <h1 class="name">Paris</h1>
+  <p class="discription">Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. </p>
+  <button class="button">view more</button>
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/nyc.jpg" alt="" draggable="false"></div>
+  <h1 class="name">New York</h1>
+  <p class="discription">New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated and world's major commercial, financial centers </p>
+  <button class="button">view more</button>
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/rome.jpg" alt="" draggable="false"></div>
+  <h1 class="name">Rome</h1>
+  <p class="discription">Rome is known for its historical landmarks and is titled 'The Eternal City' Structures such as The Colosseum and The Pantheum were constructed almost two thousand years ago, yet still stand to this day. </p>
+  <button class="button">view more</button>
+</li>
+  </ul>
+
+  <i id="right" class="fa-solid fa-angle-right right_btn"></i>
+         
+ </div>
+             
+        </section>  
+        
+        
+
+
+          <!--reviews-->
+          <h1 class="heading">Clients Reviews</h1>
+          <section class="reviews" id="reviews">
+        
+            <div class="box">
+              <div class="customer">
+                <div class="customer-info">
+                  <img src="images/c1.jpg" alt="">
+                  <div class="info">
+                    <h3>Katherine</h3>
+                  </div>
+
+                </div>
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                
+              </div>
+              <p class="text">Thanks for organizing the trip have traveled with you people before once again all good, will be in touch in a couple of days going back to Phuket in September
+                All the best Eddy</p>
+            
+            </div>
+            <div class="box">
+              <div class="customer">
+                <div class="customer-info">
+                  <img src="images/c2.jpg" alt="">
+                  <div class="info">
+                    <h3>John </h3>
+                  </div>
+
+                </div>
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                
+              </div>
+              <p class="text">The whole experience was easy. The communication was excellent and the services offered were exactly as promised. I would definitely recommend trabel online to anyone</p>
+           
+            
+            </div>
+            <div class="box">
+              <div class="customer">
+                <div class="customer-info">
+                  <img src="images/c3.jpg" alt="">
+                  <div class="info">
+                    <h3>Kim</h3>
+                  </div>
+
+                </div>
+                <i class="fa-solid fa-quote-right"></i>
+              </div>
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                
+              </div>
+              <p class="text">Every query and request was responded to promptly and clearly. Documentation was clear and all travel bookings went without a hitch. Recommended we would use it again</p>
+        
+            </div>
+          </section>
+
+
+  <!--contacts-->
+  <section class="contact" id="contact">
+    <h1 class="heading">contact us</h1>
+    <div class="con">
+
+    <div class="c_content">
+      <p>You can contact us through email, phone no, and also visit our any branch. And also you can leave any message or query you want us to answer</p>
+
+    </div>
+    <div class="c-container">
+      <div class="content-info">
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-house"></i></div>
+          <div class="text">
+            <p>4651,ABC house colony <br> XYZ city</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-phone"></i></div>
+          <div class="text">
+            <p>+111-222-333</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+          <div class="text">
+            <p>xyz1608@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <h3>send message</h3>
+          <div class="inputbox">
+            <h2>Your Name</h2>
+            <input type="text" name="" required="required">
+            
+          </div>
+          <div class="inputbox">
+            <h2>Your E-mail</h2>
+            <input type="text" name="" required="required">
+          </div>
+          <div class="inputbox">
+            <h2>Enter Message</h2>
+          <textarea required="required"></textarea>
+          </div>
+          <div class="inputbox">
+            <input type="submit" name="" value="send">
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+
+
+
+           <!--footer-->
+           <footer >
+            <div class="f-container">
+              <div class="row">
+                <div class="footer-col">
+                  <h4>company</h4>
+                  <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">affiliate programs</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>get help</h4>
+                  <ul>
+                    <li><a href="#">FQL</a></li>
+                    <li><a href="#">payment system</a></li>
+                    <li><a href="#">booking status</a></li>
+                    <li><a href="#">news</a></li>
+                  </ul>
+                </div>
+                <div class="footer-col">
+                  <h4>follow us </h4>
+                  <div class="social-links">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+           </footer>
+
+
+<script src="/index.js"></script>  
+</body>
+</html>
+
+

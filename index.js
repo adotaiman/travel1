@@ -13,12 +13,16 @@ document.querySelector('#close').onclick = () =>{
     document.querySelector('.login_form').classList.remove('active');
 }
 
+
+
+
+
 const carousel = document.querySelector(".carousel");
 const cards = document.querySelectorAll(".card");
 const leftBtn = document.getElementById("left");
 const rightBtn = document.getElementById("right");
 let currentIndex = 0;
-const numVisibleCards = 3; 
+const numVisibleCards = 2; 
 const showSlides = (startIndex) => {
     for (let i = 0; i < cards.length; i++) {
       const cardIndex = (startIndex + i) % cards.length;

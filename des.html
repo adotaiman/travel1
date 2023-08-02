@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+</head>
+<style>
+       html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:5rem;
+    scroll-behavior: smooth;
+    background: #eee;
+    
+}
+section{
+        padding:80px 120px;
+    }
+    .heading{
+        text-align: center;
+        justify-content: center;
+        font-size: 3rem;
+        margin-bottom: 1%;
+        color:black;
+    }
+    .head{
+    width:100%;
+    background: url(../images/about.jpg);
+    background-repeat: no-repeat;
+padding:10rem;
+        justify-content: center;
+        background-size: cover;
+        height: 50vh;
+
+
+}
+
+
+.head h1{
+    color:rgb( 33, 97, 140);
+       font-size: 4rem;
+       text-align: center;
+       justify-content: center;
+    }
+    .head p{
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        color: black;
+        text-align: center;
+       justify-content: center;
+    }
+    .head p:hover{
+        color:rgb( 33, 97, 140);
+    }
+    .head a{
+        color: black;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+       justify-content: center;
+    }
+    .head a:hover{
+        color:rgb( 33, 97, 140);
+    }
+    .wrapper .carousel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:3.5rem;
+    margin: 10%;
+  }
+
+    .carousel .card {
+ background:white;
+ border-radius: 8px;
+ width: calc((100% / 3) - (2rem / 3));
+ height:280px;
+ width: 250px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ padding-bottom: 15px;
+ box-shadow: 0 0 1rem rgb( 33, 97, 140);
+ }
+ .card_img{
+   
+    margin-left: 2%;
+    margin-top: 5%;
+   
+ }
+ .card_img:hover{
+  padding: 5px;
+ }
+ .name{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color:black;
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 0 0 0.3rem rgb( 33, 97, 140); 
+}
+.discription{
+    font-size: 12px;
+    color:black;
+    text-align: center;
+    padding:1rem ;
+}
+.gallery{
+  padding: 5rem 5%;
+
+}
+.gallery .box_container{
+  columns:3 25rem;
+column-gap: 1.5rem;
+margin: 10%;
+}
+.gallery .box_container .box{
+  break-inside: avoid;
+  margin-bottom: 1rem;
+}
+.gallery .box_container .box img{
+  width:100%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.gallery .box_container .box span{
+  font-size: 1.5rem;
+  color: rgb( 33, 97, 140);
+}
+.gallery .box_container .box h1{
+  font-size: 2rem;
+  color:black;
+}
+
+
+</style>
+<body>
+  <header>
+    <div class="logo">
+            <a href="#"><i class="fa-solid fa-globe"></i>TRAVELRY</a>
+    </div>
+    <nav class="nav-bar">
+        <a  href="home.html" class="active">HOME</a>
+         <a href="about.html">ABOUT US</a>
+         <a href="des.html">DESTINATION</a>
+         <a href="review.html">REVIEWS</a>
+           <a href="contact.html">CONTACT</a>
+ </nav>
+ <div class="action_btn" id="form_open">
+    <a href="#" >Get Started</a>
+</div>
+ <div class="icon">
+    <i class ="fas fa-bars" id="menu-bar"></i>
+  </div>
+ 
+
+    
+      <form action="" class="login_form">
+        <i class="fa-solid fa-circle-xmark" id="close"></i>
+        <h2>login</h2>
+        <div class="input_box">
+          <input type="email" placeholder="enter your email">
+          <i class="fa-sharp fa-regular fa-envelope email" ></i>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="enter your password">
+          <i class="fa-sharp fa-solid fa-lock password"></i>
+          <i class="fa-regular fa-eye-slash pw-hide"></i>
+        </div>
+        <div class="option_field">
+          <span class="checkbox">
+            <input type="checkbox" id="check">
+<label for="check">Remember me </label>
+            </span>
+            <a href="#" class="forget_pw">Forget password?</a>
+        </div>
+        <button class="button"> Login now</button>
+        <div class="login_singup">
+          Don't have account? <a href="#" id="signup">Sign Up</a>
+        </div>
+      </form>
+
+    <!--sign up -->
+    <div class="signup_form">
+      <form action="#">
+        <h2>sign up </h2>
+        <div class="input_box">
+          <input type="email" placeholder="enter your email">
+          <i class="fa-sharp fa-regular fa-envelope email" ></i>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="Create password">
+          <i class="fa-sharp fa-solid fa-lock password"></i>
+          <i class="fa-regular fa-eye-slash pw-hide"></i>
+        </div>
+        <div class="input_box">
+          <input type="password" placeholder="confirm password">
+          <i class="fa-sharp fa-solid fa-lock password"></i>
+          <i class="fa-regular fa-eye-slash pw-hide"></i>
+        </div>
+        <button class="button"> Sign up Now</button>
+        <div class="login_singup">
+          already have account? <a href="#" id="login">Sign Up</a>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+</header>
+
+<div class="head">
+  <h1>our travels</h1>
+  <p> <a href="about.html">about us >> </a> destination</p>
+</div>
+ <!--booking-->
+ <div class="book_form" id="book_form">
+  <form action="">
+    <div class="input_box">
+      <span>where to go?</span>
+      <input type="text" placeholder="place name" value="">
+    </div>
+    <div class="input_box">
+      <span>when?</span>
+      <input type="datetime-local">
+    </div>
+    <div class="input_box">
+      <span>how many?</span>
+      <input type="number" placeholder="number of travelers" value="">
+    </div>
+    <button class="button"> Book Now</button>
+  </form>
+
+</div>
+
+
+ <!--destination-->
+ <section class="destination" id="destination">
+  <h1 class="heading">Most Visited Places</h1>
+<div class="wrapper">
+<ul class="carousel">
+<li class="card">
+<div class="card_img"> <img src="images/paris.jpg" alt="" draggable="false"></div>
+<h1 class="name">Paris</h1>
+<p class="discription">Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture. Its 19th-century cityscape is crisscrossed by wide boulevards and the River Seine. </p>
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/nyc.jpg" alt="" draggable="false"></div>
+  <h1 class="name">New York</h1>
+  <p class="discription">New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely populated and world's major commercial, financial centers </p>
+ 
+</li>
+<li class="card">
+<div class="card_img"> <img src="images/rome.jpg" alt="" draggable="false"></div>
+<h1 class="name">Rome</h1>
+<p class="discription">Rome is known for its historical landmarks and is titled 'The Eternal City' Structures such as The Colosseum and The Pantheum were constructed almost two thousand years ago, yet still stand to this day. </p>
+
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/spain.jpg" alt="" draggable="false"></div>
+  <h1 class="name">spain</h1>
+  <p class="discription">Spain, a country on Europe’s Iberian Peninsula, includes 17 autonomous regions with diverse geography and cultures. Capital city Madrid is home to the Royal Palace and Prado museum </p>
+  
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/Greece.jpg" alt="" draggable="false"></div>
+  <h1 class="name">Greece</h1>
+  <p class="discription">Greece is a country in southeastern Europe with thousands of islands throughout the Aegean and Ionian seas. Influential in ancient times, it's often called the cradle of Western civilization. </p>
+
+</li>
+<li class="card">
+  <div class="card_img"> <img src="images/turkey.jpg" alt="" draggable="false"></div>
+  <h1 class="name">turkey</h1>
+  <p class="discription">Turkey, officially the Republic of Türkiye, is a transcontinental country located mainly on the Anatolian Peninsula in West Asia, with a small portion on the Balkan Peninsula in Southeast Europe.</p>
+ 
+</li>
+</ul>
+
+
+ 
+</div>
+     
+</section>  
+
+ <!--gallery-->
+<div class="gallery">
+  <h1 class="heading">Coutless Experience</h1>
+<div class="box_container">
+
+  <div class="box">
+    <img src="images/g1.jpg" alt="">
+    <span>travel spot</span>
+    <h1>Akranes,Iceland</h1>
+  </div>
+  <div class="box">
+    <img src="images/g2.jpeg" alt="">
+    <span>travel spot</span>
+    <h1>Sisimiut,Greenland</h1>
+  </div>
+  <div class="box">
+    <img src="images/g9.jpg" alt="">
+    <span>travel spot</span>
+    <h1>Vereeniging,South Africa</h1>
+  </div>
+  <div class="box">
+    <img src="images/g8.jpg" alt="">
+    <span>travel spot</span>
+    <h1>Itlay,Rome</h1>
+  </div>
+  <div class="box">
+    <img src="images/g7.jpg" alt="">
+    <span>travel spot</span>
+    <h1>Antalya,Turkey</h1>
+  </div>
+  <div class="box">
+    <img src="images/g6.jpg" alt="">
+    <span>travel spot</span>
+    <h1>Bangkok,Thailand</h1>
+  </div>
+  </div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+  <!--footer-->
+  <footer >
+    <div class="f-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">affiliate programs</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FQL</a></li>
+            <li><a href="#">payment system</a></li>
+            <li><a href="#">booking status</a></li>
+            <li><a href="#">news</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us </h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/index.js"></script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+  <title>Document</title>
+</head>
+<style>
+      html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top:5rem;
+    scroll-behavior: smooth;
+    background: #eee ;
+    
+}
+section{
+        padding:90px 100px;
+        margin-bottom: 10%;
+    }
+    .heading{
+        text-align: center;
+        justify-content: center;
+        font-size: 3rem;
+        margin-bottom: 1%;
+        color:black;
+    }
+.head{
+    width:100%;
+    background: url(../images/about.jpg);
+    background-repeat: no-repeat;
+padding:10rem;
+        justify-content: center;
+        background-size: cover;
+        height: 50vh;
+
+
+}
+
+
+.head h1{
+    color:rgb( 33, 97, 140);
+       font-size: 4rem;
+       text-align: center;
+       justify-content: center;
+    }
+    .head p{
+        padding-top: 1rem;
+        font-size: 1.5rem;
+        color: black;
+        text-align: center;
+       justify-content: center;
+    }
+    .head p:hover{
+        color:rgb( 33, 97, 140);
+    }
+    .head a{
+        color: black;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: center;
+       justify-content: center;
+    }
+    .head a:hover{
+        color:rgb( 33, 97, 140);
+    }
+    .re_form{
+    width:40rem;
+    height:75vh;
+    padding: 40px;
+    background: black;
+    margin-left: 35%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    border-radius: .5rem;
+    align-items: center;
+    justify-content: center;
+}
+.re_form .rating{
+color:goldenrod;
+font-size: 2.2rem;
+text-align: center;
+}
+.re_form .rating i:hover{
+  text-shadow: 0 0 1rem goldenrod;
+  padding: 5px;
+  font-size: 2.8rem;
+}
+.re_form form .input-box{
+    display:grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    color:#eee;
+
+}
+.re_form form .input-box .input{
+width:60%;
+}
+.re_form form .input-box .input span{
+    display:block;
+    padding:1rem 0;
+    font-size: 1.5rem;
+    color: white;
+    }
+.re_form form .input-box .input input,
+.re_form form .input-box .input textarea{
+ 
+    background:white;
+    border-radius: .5rem;
+    padding:1rem;
+    font-size: 1rem;
+    color:rgb( 33, 97, 140);
+    text-align: none;
+    margin-bottom: 1rem;
+    width:100%;
+    }
+    .re_form form .input-box .input input{
+      width:120%
+    }
+    .re_form form .input-box .input textarea{
+        height:18rem;
+        width:300px;
+        resize:none;
+    }
+    .re_form form input[type="submit"]{
+width:50%;
+color:white;
+border: 0.5rem solid rgb( 33, 97, 140);
+background-color:rgb( 33, 97, 140);
+border-radius: .5rem;
+margin-top: 5%;
+font-size: 15px;
+padding:8px ;
+align-items: center;
+text-align: center;
+justify-content: center;
+margin-left: 25%;
+cursor: pointer;
+}
+.re_form form input[type="submit"]:hover{
+    box-shadow: 0 0 1rem rgb( 33, 97, 140);
+}
+
+</style>
+<body>
+  <header>
+    <div class="logo">
+            <a href="#"><i class="fa-solid fa-globe"></i>TRAVELRY</a>
+    </div>
+    <nav class="nav-bar">
+        <a  href="home.html" class="active">HOME</a>
+         <a href="about.html">ABOUT US</a>
+         <a href="des.html">DESTINATION</a>
+         <a href="review.html">REVIEWS</a>
+           <a href="contact.html">CONTACT</a>
+ </nav>
+ <div class="action_btn" id="form_open">
+    <a href="#" >Get Started</a>
+</div>
+ <div class="icon">
+    <i class ="fas fa-bars" id="menu-bar"></i>
+  </div>
+
+
+
+      
+        
+  <form action="" class="login_form">
+    <i class="fa-solid fa-circle-xmark" id="close"></i>
+    <h2>login</h2>
+    <div class="input_box">
+      <input type="email" placeholder="enter your email">
+      <i class="fa-sharp fa-regular fa-envelope email" ></i>
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="enter your password">
+      <i class="fa-sharp fa-solid fa-lock password"></i>
+      <i class="fa-regular fa-eye-slash pw-hide"></i>
+    </div>
+    <div class="option_field">
+      <span class="checkbox">
+        <input type="checkbox" id="check">
+<label for="check">Remember me </label>
+        </span>
+        <a href="#" class="forget_pw">Forget password?</a>
+    </div>
+    <button class="button"> Login now</button>
+    <div class="login_singup">
+      Don't have account? <a href="#" id="signup">Sign Up</a>
+    </div>
+  </form>
+
+<!--sign up -->
+<div class="signup_form">
+  <form action="#">
+    <h2>sign up </h2>
+    <div class="input_box">
+      <input type="email" placeholder="enter your email">
+      <i class="fa-sharp fa-regular fa-envelope email" ></i>
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="Create password">
+      <i class="fa-sharp fa-solid fa-lock password"></i>
+      <i class="fa-regular fa-eye-slash pw-hide"></i>
+    </div>
+    <div class="input_box">
+      <input type="password" placeholder="confirm password">
+      <i class="fa-sharp fa-solid fa-lock password"></i>
+      <i class="fa-regular fa-eye-slash pw-hide"></i>
+    </div>
+    <button class="button"> Sign up Now</button>
+    <div class="login_singup">
+      already have account? <a href="#" id="login">Sign Up</a>
+    </div>
+  </form>
+</div>
+</div>
+  </header>
+  
+
+  <div class="head">
+    <h1>our travels</h1>
+    <p> <a href="des.html">Destination >></a> Reviews</p>
+</div>
+
+
+  <!--reviews-->
+  <h1 class="heading">Clients Reviews</h1>
+  <section class="reviews" id="reviews">
+
+    <div class="box">
+      <div class="customer">
+        <div class="customer-info">
+          <img src="images/c1.jpg" alt="">
+          <div class="info">
+            <h3>Katherine</h3>
+          </div>
+
+        </div>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <p class="text">Thanks for organizing the trip have traveled with you people before once again all good, will be in touch in a couple of days going back to Phuket in September
+        All the best Eddy</p>
+      <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+        
+      </div>
+    
+    </div>
+    <div class="box">
+      <div class="customer">
+        <div class="customer-info">
+          <img src="images/c2.jpg" alt="">
+          <div class="info">
+            <h3>John </h3>
+          </div>
+
+        </div>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <p class="text">The whole experience was easy. The communication was excellent and the services offered were exactly as promised. I would definitely recommend trabel online to anyone</p>
+      <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+        
+      </div>
+    
+    </div>
+    <div class="box">
+      <div class="customer">
+        <div class="customer-info">
+          <img src="images/c3.jpg" alt="">
+          <div class="info">
+            <h3>Kim</h3>
+          </div>
+
+        </div>
+        <i class="fa-solid fa-quote-right"></i>
+      </div>
+      <p class="text">Every query and request was responded to promptly and clearly. Documentation was clear and all travel bookings went without a hitch. Recommended we would use it again</p>
+      <div class="rating">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star-half"></i>
+        
+      </div>
+    </div>
+  </section>
+
+
+
+  
+
+ <!--form-->
+ 
+ <h1 class="heading">Our Services</h1> 
+<div class="re_form">
+  <div class="rating">
+    <i class="fas fa-star"></i>
+    <span><i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i> 
+    <i class="fas fa-star"></i></span>
+  </div>
+  <form active="">
+      <div class="input-box">
+          
+     
+          <div class="input">
+              <span>your message</span>
+             <textarea name="" placeholder="enter your message" id="" cols="30" row="10"></textarea>
+          </div>
+          <div class="input">
+            <span>your email</span>
+            <input type="text" placeholder="enter your email">
+        </div>
+      </div>
+      <input type="submit" value="Post Now" class="btn">
+  </form>
+
+</div>
+
+
+
+
+
+
+
+
+
+  <!--footer-->
+  <footer >
+    <div class="f-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>company</h4>
+          <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">affiliate programs</a></li>
+            <li><a href="#">our services</a></li>
+            <li><a href="#">privacy policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>get help</h4>
+          <ul>
+            <li><a href="#">FQL</a></li>
+            <li><a href="#">payment system</a></li>
+            <li><a href="#">booking status</a></li>
+            <li><a href="#">news</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>follow us </h4>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-linkedin"></i></a>
+           
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   </footer>
+
+
+
+
+
+
+
+
+
+
+<script src="/index.js"></script>  
+</body>
+</html>
