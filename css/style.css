@@ -331,6 +331,14 @@ object-fit: cover;
         margin-bottom: 1%;
         color:white;
     }
+    .about .a_content p{
+        color: white;
+        font-size: 1.5rem;
+       text-align: center;
+       justify-content: center;
+       margin-bottom: 5%;
+    
+    }
     .about .row{
         display:flex;
         border-radius: 0.5rem;
@@ -370,7 +378,14 @@ object-fit: cover;
     .about .row .content a:hover{
         box-shadow: 0 0 1rem rgb( 33, 97, 140); 
     }
+    .destination .de_content p{
+        color: white;
+        font-size: 1.5rem;
+       text-align: center;
+       justify-content: center;
+       margin-bottom: 5%;
     
+    }   
     .wrapper{
         max-width: 1100px;
         width:100%;
@@ -381,9 +396,9 @@ object-fit: cover;
 .wrapper .carousel{
 display: grid;
 grid-auto-flow: column;
-grid-auto-columns: calc((100% / 3) - 12px);
+grid-auto-columns: calc((100% / 2) - 12px);
 gap:15rem;
-margin-left: 15%;
+margin-left: 6%;
 }
 .wrapper i{
     width: 30px;
@@ -483,15 +498,23 @@ margin-left: 15%;
     box-shadow: 0 0 1rem rgb( 33, 97, 140); 
 
 }
-.reviews {
+.reviews .re_content p{
+    color: white;
+    font-size: 1.5rem;
+   text-align: center;
+   justify-content: center;
+   margin-bottom: 5%;
+
+} 
+.r_row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap:1rem;
-    height:50vh;
+    height:60vh;
   }
 
-.reviews .box{
+.r_row .box{
     border-radius: 0.5rem;
     background: white;
     padding: 1rem;
@@ -501,28 +524,28 @@ margin-left: 15%;
     box-shadow: 0 0.2rem 1rem  rgb(40, 112, 189);
  
 }
-.reviews .box .customer{
+.r_row .box .customer{
     display: flex;
     align-items: center;
     justify-content: space-around;
     
 }
-.reviews .box .customer .customer-info{
+.r_row .box .customer .customer-info{
     display:flex;
     align-items: center;
 
 }
-.reviews .box .customer .customer-info .info{
+.r_row .box .customer .customer-info .info{
     font-size: 1.5rem;
     margin:5%;
 
 }
-.reviews .box .customer i{
+.r_row .box .customer i{
     font-size: 5rem;
     color:rgb( 33, 97, 140);
     opacity: .6;
 }
-.reviews .box .customer .customer-info img{
+.r_row .box .customer .customer-info img{
    width:10rem;
    height:10rem;
    object-fit: cover;
@@ -531,12 +554,12 @@ margin-left: 15%;
    box-shadow: 0 0.2rem 1rem  rgb(40, 112, 189);
     
 }
-.reviews .box .text{
+.r_row .box .text{
     padding: 1rem 0;
     font-size: 1.5rem;
 
 }
-.reviews .box .rating{
+.r_row .box .rating{
     margin-top: 2%;
     font-size: 1.5rem;
     color:goldenrod;
@@ -563,6 +586,7 @@ margin-left: 15%;
 .con .c_content p{
     color: white;
     font-size: 1.5rem;
+   
 
 }
 .c-container{
@@ -579,7 +603,7 @@ margin-left: 15%;
 }
 .c-container .content-info .box{
     position: relative;
-    padding:20px 0;
+    padding:5px 0;
     display:flex;
 
 }
@@ -770,15 +794,37 @@ padding-left: 5px;
     max-width: 1100px;
     width:100%;
     position: relative;
-    gap:2rem;
+    gap:1rem;
     margin-right: 5%;
+}
+section{
+    padding:100px 150px;
 }
 .wrapper .carousel{
 display: grid;
 grid-auto-flow: column;
 grid-auto-columns: calc((100% / 2) - 12px);
 gap:3.5rem;
+margin-right: 0;
+margin-left: 8%;
 }
+.reviews {
+  
+    height:120vh;
+  }
+.reviews .box{
+    padding: 2rem;
+    flex:1 1 18rem;
+  width:230px;
+     
+}
+.r_row .box .customer i{
+    font-size: 4rem;
+    margin-bottom: 10%;
+    margin-left: 5%;
+}
+
+
 }
 @media (max-width:979px){
     .home .home-text{
@@ -800,6 +846,12 @@ gap:3.5rem;
       
 
     }
+    .reviews .box{
+        padding: 2rem;
+        flex:1 1 18rem;
+      width:220px;
+         
+    }
 }
 @media (max-width:925px){
     .about .row .content h3{
@@ -807,16 +859,34 @@ gap:3.5rem;
         padding:0 ;
     }
 }
-@media (max-width:925px){
-    .about .row .content h3{
-        font-size:2.8rem;
-        
-    }
-}
 @media (max-width:771px){
     .home .home-text p{
         font-size: 1.3rem;
     } 
+    section{
+        padding:70px 100px;
+    }
+    .heading{
+        font-size: 3rem;
+        margin-bottom: 2%;
+        margin-top: 5%;
+       
+    }
+.wrapper .carousel{
+display: grid;
+grid-auto-flow: column;
+grid-auto-columns: calc((100% / 2) - 12px);
+gap:4rem;
+margin-left: 1%;
+}
+.reviews {
+  
+    height:140vh;
+  }
+  .contact-form{
+    width:50%;
+margin-top: 5%;
+}
    
 }
     @media (max-width:768px){
@@ -860,7 +930,7 @@ gap:3.5rem;
                 right:5rem;
                
                     }
-                 
+               
 
     }
     @media (max-width:683px){
@@ -878,11 +948,11 @@ gap:3.5rem;
             font-size: 1.2rem;
         }
         section{
-            padding:70px 100px;
+            padding:60px 80px;
         }
         .about .row .content p{
-            color:white;
-            font-size:1.2rem;
+            color:black;
+            font-size:1.5rem;
             padding:1rem 0;
             line-height: 2rem;
         }
@@ -891,10 +961,49 @@ gap:3.5rem;
         padding:1rem 2rem;
         
         }
+       
+        .wrapper{
+            max-width: 1100px;
+            width:90%;
+            position: relative;
+            gap:5rem;
+            margin-bottom: 10%;
+        }
+        .wrapper .carousel{
+            grid-auto-columns: calc((100% / 2) - 10px);
+           
+            }
+            .wrapper i:first-child{
+                left:-10px;
+            
+             
+             }
+            .wrapper i:last-child{
+                right:-40px;
+             }
+             .carousel.dragging.card
+                {
+                    cursor: grab;
+                    user-select: none;
+                }
+            .carousel .card {
+             height:330px;
+             width: 230px;
+           
+             }
+             .button{
+            width:100px;
+            height:7vh;
+                padding:1rem;
+                margin-left: 30%;
+              
+        }
+  
     }
     @media (max-width:583px){
         section{
-            padding:80px 120px;
+            padding:40px 70px;
+            padding-left: 70px;
         }
         .about .icons-container .icons{
      
@@ -907,8 +1016,11 @@ gap:3.5rem;
                 margin-top: 5%;
                
             }
+            .about .a_content p{
+                font-size: 1rem;
+            }
             .about .row .content h3{
-                font-size:2.5rem;
+                font-size:2rem;
                 
             }
             .about .row .content a{
@@ -916,11 +1028,113 @@ gap:3.5rem;
                 font-size: 1.2rem;
             
             }
-      
+            .destination .de_content p{
+                font-size: 1rem;
+            
+            } 
+            .wrapper i:last-child{
+                right:-30px;
+             }
+             .wrapper{
+    max-width: 1100px;
+    width:100%;
+    position: relative;
+    gap:1rem;
+    margin-right: 5%;
+}
+            .carousel .card {
+                height:340px;
+                width: 200px;
+              
+                }
+                .button{
+                        margin-left: 25%;
+                      
+                }
+            
+                .card_img{
+                    height:80px;
+                    width:120px;  
+                 }
+                 .card_img img{
+                    height:100%;
+                    width:100%; 
+                 }
+                 .name{
+                    font-size: 2.2rem;
+            
+                }
+                .reviews {
+  
+                    height:120vh;
+                  }
+                .reviews .re_content p{
+                    font-size: 1rem;
+                  
+                } 
+         
+                 .r_row .box{
+                
+                    width:200px;
+                   }
+                   .r_row .box .customer .customer-info img{
+                    width:8rem;
+                    height:8rem;
+                     
+                 }
+                 .r_row .box .text{
+                  
+                     font-size: 1.2rem;
+                 
+                 }
+                 .con .c_content p{
+                    font-size: 1rem;
+                    }
+                    .contact-form{
+                        width:55%;
+                    margin-top: 8%;
+                    }
+                    .c-container{
+                       gap:1rem;
+                    }
+                    .c-container .content-info{
+                        width:52%;
+                        display: flex;
+                        flex-direction: column;
+                        
+                    }
+                    .row{
+                        display: flex;
+                        flex-wrap: wrap;
+                        }
+                        .f-container{
+                        width:100%;
+                        background-color: black;
+                        margin:auto;
+                        padding:2rem 1rem;
+                        
+                        }
+                        .footer-col{
+                            width:20%;
+                            padding:0 80px;
+                        }
+                        .footer-col .social-links{
+                            display:flexbox;
+                            height:100px;
+                            width:100px;
+                        }
+                    
+                     
+                
       
 
     }
     @media (max-width:478px){
+
+        .home{
+            width:100%;
+            
+        }
         .home .home-text p{
             font-size: 1.2rem;
             margin-bottom: 8%;
@@ -930,130 +1144,84 @@ gap:3.5rem;
             padding:1rem 2rem;
             font-size: 1.3rem;
         }
-        section{
-            padding:50px 70px;
-        }
-        .about .icons-container .icons{
-        border-radius: .2rem;
-        border:.4rem solid white;
-        padding:1rem 1.8rem;
+      
+            .button{
+                    margin-left: 25%;
+                  
+            }
+            .wrapper{
+                max-width: 1100px;
+                width:90%;
+                position: relative;
+                gap:1rem;
+                margin-right: 10%;
+            }
+            .wrapper i:first-child{
+                left:-23px;
+            
+             
+             }
+            .wrapper i:last-child{
+                right:-68px;
+             }
+         
+            .carousel .card {
+                height:350px;
+                width: 165px;
+              
+                }
         
-        }
-        .about  .icons-container .icons i{
-            font-size: 1.8rem;
-           
-        }
-        .about   .icons-container .icons h3{
-            font-size: 1.2rem;
-           
-        }
+            .card_img{
+                height:70px;
+                width:105px;  
+             }
+             .card_img img{
+                height:100%;
+                width:100%; 
+             }
+             .reviews {
+  
+               height:150vh;
+              }
+              .footer-col{
+                width:20%;
+                padding:0 50px;
+            }
+       
       
     }
   
-    
- 
-    @media (max-width:425px){
-        header{
-            padding:1rem 1rem;
-            width:100%;
-        }
+    @media (max-width:425px)
+    {
         header .logo{
-            font-size: 1.5rem;
-          
-        }
-       header .nav-bar{
-          width: 20rem;
-        }
-        header .nav-bar a{
-          
-            padding: 1rem 7rem;
-            font-size: 1.2rem;
-               }      
-               header .action_btn{
-             
-                padding:0.5rem 1rem;
-                right:5rem;
-               
-                    }  
-                    header .action_btn{
-                        padding:0.5rem 1rem;
-                        font-size: 1.2rem;
-                        right:3rem;
-                         }
-                          section{
-                            padding:50px 70px;
-                        }
-                        .home .home-text h1{
-                            font-size: 2rem;
-                            font-weight: 700;
-                            text-transform: uppercase;
-                            line-height: 50px;
-                        }
-                        .home .home-text p{
-                            font-size: 1rem;
-                        }
-                        .home .social a{
-                            font-size: 1rem;
-                          
-                        }
-}
-@media (max-width:375px){
-    section{
-        padding:50px 70px;
-    }
-    .home .home-text h1{
-        font-size: 1.3rem;
-        font-weight: 800;
-        line-height: 30px;
-    } 
-    .home .home-text p{
-        font-size: 1rem;
-    }
-    .home .home-text a{
-        font-size: 1rem;
-    }
-    section{
-        padding:40px 50px;
-    }
-    .about .row .content h3{
-        font-size:2.3rem;
-        
-    }
-    .about .row .content p{
-        font-size:1.2rem;
-        
-    }
-    .about .icons-container .icons{
-        border-radius: .2rem;
-        border:.4rem solid white;
-        padding:1rem 1.2rem;
-        
-        }
-        .about  .icons-container .icons i{
             font-size: 1.2rem;
            
-        }
-        .about .row .content h3{
-            font-size:2.2rem;
-            
-        }
-        .about .row .content p{
-            font-size:1rem;
-            
-        }
-        .about .row .content a{
-            padding:1rem 1rem;
-            font-size: 1rem;
         
         }
-}
-@media (max-width:320px){
-    .home .home-text a{
-       
-        padding:0.8rem 1rem;
-      
-    }
-    section{
-        padding:40px 40px;
-    }
-}
+        header .action_btn{
+            font-size: 1rem;
+          
+                }
+                .login_form{
+                    position:absolute;
+                    max-width: 250px;
+                    width: 100%;
+                    top:20rem;
+                    right:-120%;
+                  align-items: center;
+                  
+                }
+                .wrapper .carousel{
+                    display: grid;
+                    grid-auto-flow: column;
+                    grid-auto-columns: calc((100% / 1) - 12px);
+                    gap:15rem;
+                    margin-left: 20%;
+                    }
+                    .carousel .card {
+                        height:330px;
+                        width: 200px;
+                        }
+    } 
+ 
+  

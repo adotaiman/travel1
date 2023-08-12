@@ -46,6 +46,38 @@ showSlides(currentIndex);
 
 
 
+const media=() =>{
+    let q=matchMedia("(max-width:425px)");
+    if(q.matches){
+        const carousel = document.querySelector(".carousel");
+        const cards = document.querySelectorAll(".card");
+        const leftBtn = document.getElementById("left");
+        const rightBtn = document.getElementById("right");
+        let currentIndex = 0;
+        const numVisibleCards = 1; 
+        const showSlides = (startIndex) => {
+            for (let i = 0; i < cards.length; i++) {
+              const cardIndex = (startIndex + i) % cards.length;
+              cards[cardIndex].style.display = i < numVisibleCards ? "block" : "none";
+            }
+          };
+        const slideLeft = () => {
+          currentIndex = (currentIndex - 1 + cards.length) % cards.length;
+          showSlides(currentIndex);
+        };
+        const slideRight = () => {
+          currentIndex = (currentIndex + 1) % cards.length;
+          showSlides(currentIndex);
+        };
+        leftBtn.addEventListener("click", slideLeft);
+        rightBtn.addEventListener("click", slideRight);
+        showSlides(currentIndex);
+         
+    }
+}
+
+
+
 
 
 
